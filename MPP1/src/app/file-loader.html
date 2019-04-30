@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ожидание данных</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 align="center">Введите данные</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label class="info" id="edit1">Введите строку, которую нужно заменить:</label><br><br>
+            <input class="user-info" autocomplete="off" type="text" name="stringToBeChanged" required pattern="^[a-zA-Z0-9]{1,100}$" title="Можно ввести от 1 до 100 символов. Допускаются цифры и латинские маленькие/большие буквы."><br><br><br>   
+             
+            <input class="file-loader" type="file" required name="file0"><br>
+            <input class="file-loader file-extra" type="file" name="file1">
+            <input class="file-loader file-extra" type="file" name="file2">
+            <input class="file-loader file-extra" type="file" name="file3">
+            <input class="file-loader file-extra" type="file" name="file4">
+            <input class="file-loader file-extra" type="file" name="file5">
+            <input class="file-loader file-extra" type="file" name="file6">
+            <input class="file-loader file-extra" type="file" name="file7">
+            <input class="file-loader file-extra" type="file" name="file8"><br>
+            <input class="button" type="submit" value="Готово!">
+        </form>
+    </div>
+
+    <script src="new-files.js"></script>
+
+</body>
+</html>
