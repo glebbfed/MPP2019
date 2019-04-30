@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Авторизация</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 align="center">Пожалуйста, авторизируйтесь</h1><br><br><br>
+        <form action="/auth" method="post" enctype="multipart/form-data" name="dataForm">
+            <label class="info authorize">Логин:</label><br><br>
+            <input class="user-info authorize-field" autocomplete="off" type="text" name="login" required pattern="^[a-zA-Z0-9_]{6,12}$" title="В логине может быть от 6 до 12 символов. Разрешены: латинские буквы обоих регистров, цифры и нижнее подчёркивание."><br><br><br><br><br><br>
+
+            <label class="info authorize" ">Пароль:</label><br><br>
+            <input class="user-info authorize-field" autocomplete="off" type="password" name="password" required pattern="^[a-zA-Z0-9_]{3,20}$"><br><br><br>
+      
+            <input class="button authorize-button" type="submit" value="Готово!"><br><br><br><br><br>
+        </form>
+    </div>
+
+</body>
+</html>

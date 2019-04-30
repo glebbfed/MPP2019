@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список файлов</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="element-delete.js"></script>
+</head>
+<body>
+
+    <form action="/logout" method="post" enctype="multipart/form-data">
+        <button class="logout-button">Выйти</button>
+    </form>
+
+    <div class="container-x">
+        <h1 align="center">Ваши файлы</h1>
+        <table class="result-table">
+            <tr>
+                <td>Имя файла</td>
+                <td>Статус</td>
+                <td>Загрузка</td>
+                <td>Дополнительные сведения</td>
+                <td>Дополнительно</td>
+            </tr>
+
+            {FILES-INFO}
+
+        </table>
+    </div>
+
+</body>
+</html>

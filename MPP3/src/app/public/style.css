@@ -1,0 +1,116 @@
+body {
+	background-image: url("bg.jpg");
+	background-attachment: fixed;
+	margin: 0px;
+	font-family: sans-serif;
+}
+
+td {
+	padding-left: 4em;
+	padding-top: 2em;
+}
+
+h1 {
+	margin-top: 0em;
+}
+
+
+.container {
+	margin: 10em 10em;
+	box-shadow: 0 0 2em rgba(33, 32, 120, 1), inset 0 0 7em rgba(33, 32, 120, 1), 0 0 7em rgba(33, 32, 120, 1);
+	color: rgba(30, 148, 167, 1);
+	text-shadow: 0 0 2em rgba(77, 184, 255, 1), 0 0 1em  rgba(77, 184, 255, 1);
+	padding-top: 5em;
+}
+
+.info {
+	margin-left: 28em;
+}
+
+.user-info {
+	margin-left: 20em;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 60px;
+	border-radius: 10px;
+	background-color: rgba(33, 32, 118, 0.8);	
+	transition: 1s;
+	border-style: none;
+	color: rgba(30, 148, 167, 1);
+	font-size: 23px;
+	text-shadow: 0 0 1em blue;
+}
+
+.user-info:focus {
+	background-color: rgba(33, 32, 120, 0.4);
+	box-shadow: inset 0 0 2em black, 0 0 2em blue;
+	outline: none;
+}
+
+
+.button,
+.downloading-button, .logout-button {
+	margin-left: 25em;
+	margin-top: 1em; 
+	margin-bottom: 1em; 
+	width: 120px;
+	height: 45px;
+	border-radius: 10px;
+	background-color: rgba(33, 32, 120, 1);
+	box-shadow: 0 0 2em rgba(30, 148, 167, 1), inset 0 0 1em rgba(30, 148, 167, 1), inset 0 0 1em rgba(30, 148, 167, 1);
+	color: rgba(30, 148, 167, 1);
+	transition: 0.7s;
+	border-style: none;
+	font-size: 23px;
+	text-shadow: 0 0 2em rgba(0, 0, 77, 1), 0 0 2em  rgba(0, 0, 77, 1), 0 0 2em  rgba(0, 0, 77, 1);
+}
+
+.downloading-button {
+	margin-top: 0; 
+	margin-bottom: 0; 
+	margin-left: 0;
+}
+
+.downloading-button:hover,
+.button:hover {
+	background-color: blue;
+	color: silver;
+	animation-duration: 2s;
+  	animation-name: ready-for-action;
+  	animation-iteration-count: infinite;
+}
+
+.file-loader {
+	outline: none;
+	margin-left: 21em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.file-extra {
+	display: none;
+}
+
+.result-table {
+	padding-bottom: 3em;
+	padding-right: 3em;
+}
+
+.fail {
+	color: red;
+	text-shadow: 0 0 2em red, 0 0 2em red, 0 0 1em red;
+}
+
+.success {
+	color: green;
+	text-shadow: 0 0 2em green, 0 0 2em green, 0 0 2em green, 0 0 1em green, 0 0 1em green;
+}
+
+.logout-button {
+	position: fixed;
+	margin: 0;
+	top: 0;
+	left: 0;
+	width: 10em;
+	height: 2em;
+}
