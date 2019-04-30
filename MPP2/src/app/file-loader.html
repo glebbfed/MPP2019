@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ожидание данных</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 align="center">Введите данные</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data" name="dataForm">
+            <label class="info" id="edit1">Введите строку, которую нужно удалить:</label><br><br>
+            <input class="user-info" autocomplete="off" type="text" name="stringToBeChanged" required pattern="^[a-zA-Zа-яА-Я0-9]{1,100}$" title="Можно ввести от 1 до 100 символов. Допускаются русские/латинские маленькие/большие буквы."><br><br><br> 
+
+            <div class="file-loader">  
+                <input class="input-file" id="my-file0" required type="file" name="file0">
+                <label for="my-file0"></label>
+                <label for="my-file0" class="input-file-trigger">Выберите файл...</label>           
+            </div>
+
+            <div id="fill-me">{FILL_HERE}</div>
+
+            <script src="preloading-script.js"></script>
+      
+            <input class="button" type="submit" value="Готово!">
+        </form>
+    </div>
+
+    <script src="new-files.js"></script>
+
+</body>
+</html>
